@@ -19,3 +19,11 @@ More than five-year work experience in IT using Java:
 - Mentoring of newcomers
 - Basic knowledge of HTML,CSS, JavaScript
 - Development of front-end and back-end
+
+Languages:
+- Russian (native);
+- English (upper-intermediate, spoken and written)
+
+Certificates:
+- Oracle Certified Associate, Java SE 8 Programmer
+- Microsoft Certified: Azure Fundamentals
