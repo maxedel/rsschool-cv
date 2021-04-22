@@ -1,0 +1,564 @@
+/* font imports */
+/*@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');*/
+/* css variables */
+:root{
+    --gold: #dab33e;
+    --goldTransparent: rgba(218,179,62, 0.5);
+    --white: #FFF;
+    --black: #000;
+    --footer: #191919;
+}
+/* body section */
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #eee;
+}
+/* global styles */
+
+
+/* header section */
+header{
+    height: 110px;
+    width: 1600px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    padding-left: 175px;
+    padding-right: 215px;
+    float: left;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(250,250,250,0) 100%);
+}
+header h1{
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: var(--white)
+}
+.navbarcontainer{
+    display: flex;
+    padding-right: 40px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    height: 110px;
+}
+.navbar button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 21px;
+    color: var(--white);
+    border: 0;
+}
+.navbar button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+}
+.socialMedia{
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerLink:link, .headerLink:visited{
+    color: var(--gold)
+}
+.headerLink:hover{
+    color: goldenrod;
+}
+
+/* main settings */
+main{
+    position: absolute;
+    min-height: 100vh;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/* home section */
+.home{
+    background-image: url(/rsschool-cv/img/top-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    min-width: 1600px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-family: 'yeseva one', cursive;
+    font-size: 90px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 90px;
+}
+.home img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.buttonsContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+}
+.buttonsContainer > *{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: var(--white);
+    width: 228px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bookButton{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid black;
+}
+.bookButton:hover{
+    background-color: #000;
+}
+.menuButton{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid white;
+}
+.menuButton:hover{
+    background-color: rgba(255,255,255,0.8);
+    color: #000;
+}
+/* about section */
+.about{
+    background-image: url(/rsschool-cv/img/about-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    min-width: 1600px;
+    height: 710px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.aboutDescriptionContainer{
+    width: 432px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--gold);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.about p{
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.about img:last-of-type{
+    position: relative;
+    left: 40px;
+}
+/* ingredients section */
+.ingredients{
+    background-image: url(/rsschool-cv/img/ingredients-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    min-width: 1600px;
+    height: 760px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 560px 100px;
+}
+.ingredientsDescriptionContainer{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 590px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.ingredientsDescriptionContainer h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--white);
+    margin: 0 0;
+}
+.ingredientsDescriptionContainer img{
+    margin: 20px 15px;
+}
+.ingredientsDescriptionContainer p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 430px;
+    color: var(--white);
+}
+.ingredientContainer{
+    margin: 20px 0;
+}
+.ingredientContainer img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(150,150,150, 0.3);
+}
+/* menu section */
+.menu{
+    background-image: url(/rsschool-cv/img/menu-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    min-width: 1600px;
+    height: 990px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.menuColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 430px;
+    box-sizing: border-box;
+    margin: 0 65px 0 65px;
+}
+.menuTitle h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--gold);
+    text-align: center;
+    margin: 0 0;
+}
+.menuTitle img{
+    margin: 20px 0;
+}
+.menuItemTitleContainer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--goldTransparent);
+}
+.menuItemTitleContainer h4{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--gold);
+    margin: 0 0;
+}
+.menuItem, .specialMenuItem p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+.menuItem, .specialMenuItem{
+    width: 430px;
+}
+.specialMenuItem{
+    padding: 0 10px;
+    border: 1px solid var(--goldTransparent);
+    margin-top: 10px;
+}
+.specialBox{
+    height: 20px;
+    width: 80px;
+    position: relative;
+    top: -20px;
+    left: 360px;
+    background-color: var(--goldTransparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: var(--white);
+}
+/* reviews section */
+.reviews{
+    background-image: url(/rsschool-cv/img/review-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    min-width: 1600px;
+    height: 758px;
+    display: grid;
+    grid-template-columns: 6.64fr 12.32fr 6.64fr;
+    grid-template-rows: 1fr 5.57fr 1fr;
+}
+.reviewWraper{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 40px;
+    overflow: hidden;
+}
+.reviewWraper h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--white);
+    margin: 0 0;
+}
+.reviewWraper p{
+    font-family: 'Gentium Book Basic', serif;
+    color: #dde0df;
+    font-size: 25px;
+    line-height: 45px;
+    text-align: center;
+    font-weight: 700;
+}
+.reviewWraper p:first-of-type::first-line{
+    text-indent: -50px;
+}
+.reviewWraper p:first-of-type::before{
+    content: '“';
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 96px;
+    color: #9a9b99;
+    position: relative;
+    top: 30px;
+    left: -10px;
+}
+.reviewWraper p:last-of-type{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* reservations section */
+.reservations{
+    background-image: url(/rsschool-cv/img/about-back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1600px;
+    min-width: 1600px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 175fr 600fr 70fr 600fr 175fr;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+.reservationPictureContainer{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+.reservationsWrapper{
+    grid-row-start: 2;
+    grid-column-start: 4;
+    display:flex;
+    justify-content: center;
+}
+.reservationsContainer{
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 0;
+    overflow: hidden;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+label{
+    font-family: 'Open Sans', sans-serif;
+    color: var(--gold);
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+input, select{
+    width: 200px;
+    height: 36px;
+    box-sizing: border-box;
+    padding: 0 8px;
+    background-color: rgba(255,255,255,0.4);
+    z-index: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    color: #7c7c7c;
+    border: 1px solid #7c7c7c;
+}
+input:focus, select:focus{
+    outline: none !important;
+    border: 1px solid var(--gold);
+    box-shadow: none;
+}
+input:valid, select:valid{
+    background-color: rgba(0,100,0,0.03);
+}
+.reservations button{
+    width: 200px;
+    height: 36px;
+    box-sizing: border-box;
+    justify-self: center;
+    margin: 39px 115px 0 115px;
+    background-color: var(--gold);
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: var(--white);
+}
+.reservations button:hover{
+    background-color: goldenrod;
+}
+.reservations button:active{
+    transform: translateY(2%);
+}
+.formInput{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.formInput i{
+    position: relative;
+    top: -28px;
+    left: 170px;
+    z-index: 1;
+    color: #7c7c7c;
+}
+::-webkit-calendar-picker-indicator:hover, ::-webkit-calendar-picker-indicator{
+    background-color: rgba(0,0,0,0);
+    z-index: 10;
+}
+input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.reservations h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--gold);
+    margin: 0;
+}
+.reservations p{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+}
+/* footer section */
+footer{
+    width: 1600px;
+    min-width: 1600px;
+    height: 300px;
+    background-color: var(--footer);
+    display: grid;
+    grid-template-columns: 215fr 360fr 100fr 230fr 170fr 230fr 270fr;
+    grid-template-rows: 1fr 4fr 1fr;
+
+}
+.footerDescription{
+    grid-row-start: 2;
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+footer h5{
+    font-family: 'Yeseva One', cursive;
+    color: var(--white);
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0;
+}
+footer p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+}
+.openingHours{
+    grid-row-start: 2;
+    grid-column-start: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.openingHours .iconWrapper{
+    margin-top: 38px;
+}
+.location .iconWrapper{
+    margin-top: 38px;
+}
+.iconWrapper{
+    color: var(--white);
+}
+.iconWrapper i{
+    margin: 0 5px;
+}
+.footerLink:link, .footerLink:visited{
+    color: var(--white);
+}
+.iconWrapper a:hover{
+    color: gainsboro;
+}
+.location{
+    grid-row-start: 2;
+    grid-column-start: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
